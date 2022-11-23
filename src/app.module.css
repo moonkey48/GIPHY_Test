@@ -2,13 +2,21 @@
   padding: 0;
   margin:0;
 }
+.title{
+  width: 710px;
+  height: 50px;
+  background: url('title.png') 0 center no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 50px auto 0;
+}
 .form{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 5rem 0;
+  margin: 2rem 0 5rem; 
 }
 .searchBar{
   width: 20rem;
@@ -41,4 +49,10 @@
 }
 .img{
   height: 200px;
+}
+@media (max-width: 800px){
+  .title{
+    width: 360px;
+    height: 30px;
+  }
 }

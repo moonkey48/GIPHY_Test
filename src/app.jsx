@@ -42,8 +42,8 @@ function App({giphy}) {
     },[giphy]);
     return(
       <>
+      <h1 className={s.title}></h1>
       <form className={s.form} ref={formRef} onSubmit={handleSearch}>
-        <h3 className={s.formTitle}>Search</h3>
         <input className={s.searchBar} ref={searchRef} type="text"/>
       </form>
       <ul className={s.list} >{gifs.map((gif,index)=>{
